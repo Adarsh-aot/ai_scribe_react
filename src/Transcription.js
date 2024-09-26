@@ -41,7 +41,7 @@ const Transcription = () => {
           mimeType: 'audio/webm',
         });
 
-        socketRef.current = new WebSocket('wss://aiscribe.quipohealth.com/ws');
+        socketRef.current = new WebSocket('wss://api.aiscribe.quipohealth.com/ws');
 
         socketRef.current.onopen = () => {
           setStatus('Connected');
